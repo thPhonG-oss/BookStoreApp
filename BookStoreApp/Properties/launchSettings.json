@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "BookStoreApp (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "BookStoreApp (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
