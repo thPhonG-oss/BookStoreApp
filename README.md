@@ -73,6 +73,14 @@
 ---
 
 ## 5. Design Pattern sử dụng
+| STT | Design Pattern                    | Mục đích chính                                                                                                                                           |
+| :-: | :-------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|  1  | **Command**                       | Đóng gói **thao tác người dùng** (nhấn nút, menu) thành đối tượng để thực thi và quản lý.                                                                |
+|  2  | **Observer**                      | **Cập nhật tự động** các phần UI (View) phức tạp khi trạng thái dữ liệu (Model/ViewModel) thay đổi, ngoài `INotifyPropertyChanged` cơ bản.               |
+|  3  | **Repository**                    | Cung cấp lớp trung gian để **quản lý dữ liệu** và tách biệt **Tầng Logic Nghiệp vụ (ViewModel)** khỏi chi tiết truy cập dữ liệu (SQL, Web API).          |
+|  4  | **Facade**                        | Cung cấp một **interface đơn giản** cho ViewModel truy cập vào một **hệ thống con phức tạp** (bao gồm DB, File Storage, Web Service).                    |
+|  5  | **Factory Method** / **Mediator** | **Tạo các đối tượng** giao tiếp client-server (**Service Connector**) một cách **độc lập** với code Business Logic (ViewModel).                          |
+|  6  | **Strategy**                      | Thay đổi **thuật toán xử lý** động.                                                                                                                      |
 
 ---
 
