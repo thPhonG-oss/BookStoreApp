@@ -113,8 +113,8 @@
 ---
 
 ## Tác giả
-> **Đồ án môn học: Lập trình Windows - Khoa Công nghệ thông tin - Trường Đại học Khoa học Tự nhiên, ĐHQG TPHCM**
-> GVHD: *Thầy Trần Duy Quang*  
+> **Đồ án môn học: Lập trình Windows**
+> *GVHD: *Thầy Trần Duy Quang*  
 > Năm học: 2025
 
 ---
