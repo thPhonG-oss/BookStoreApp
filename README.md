@@ -2,8 +2,20 @@
 ## Ứng dụng quản lý bán hàng (Sales Management System)
 
 ---
+## Mục lục
+1. [Thông tin các thành viên](#0-thông-tin-các-thành-viên)  
+2. [Chức năng ứng dụng](#1-chức-năng-ứng-dụng)  
+3. [Giao diện (Prototype Figma)](#2-giao-diện-prototype-figma)  
+4. [Làm việc nhóm & Chiến lược Git](#3-làm-việc-nhóm--chiến-lược-git)  
+5. [Kiến trúc phần mềm](#4-kiến-trúc-phần-mềm)  
+6. [Design Pattern áp dụng](#5-design-pattern-áp-dụng)  
+7. [Đảm bảo chất lượng](#6-đảm-bảo-chất-lượng)  
+8. [Các tính năng nâng cao](#7-các-tính-năng-nâng-cao)  
+9. [Kế hoạch & Tiến độ thực hiện](#8-kế-hoạch--tiến-độ-thực-hiện)  
 
-## 0. 👥 Thông tin các thành viên
+---
+
+## 0. Thông tin các thành viên
 
 | STT | Họ tên | MSSV | Vai trò | Ghi chú |
 |-----|---------|-------|----------|----------|
@@ -16,7 +28,7 @@
 
 ---
 
-## 1. ⚙️ Chức năng ứng dụng
+## 1. Chức năng ứng dụng
 
 ### **Chức năng cơ bản**
 - Đăng nhập / Đăng xuất (JWT + Salt)
@@ -28,7 +40,7 @@
 
 ---
 
-## 2. 🎨 Giao diện (Prototype Figma)
+## 2. Giao diện (Prototype Figma)
 
 - File Figma: [ Xem Prototype tại đây](https://www.figma.com/file/xxxxx/SalesApp_UI_V1)
 - Prototype mô phỏng các luồng chính:
@@ -37,7 +49,7 @@
 
 ---
 
-## 3. 🧑‍💻 Làm việc nhóm
+## 3. Làm việc nhóm
 
 ### **Công cụ và quy trình**
 - Quản lý mã nguồn: **GitHub**
@@ -100,7 +112,7 @@
 
 ---
 
-## 📜 Tác giả
+## Tác giả
 > **Đồ án môn học: Lập trình Windows – Khoa Công nghệ thông tin - Trường Đại học Khoa học Tự nhiên 
 > GVHD: *Thầy Trần Duy Quang*  
 > Năm học: 2025
