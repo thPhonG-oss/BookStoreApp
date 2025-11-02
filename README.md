@@ -75,13 +75,12 @@
 | Auto Save | +0.25 |
 | Responsive Layout | +0.5 |
 | Bổ sung khuyến mãi | +1.0 |
-| Sử dụng kiến trúc MMVM |  | +0.5 |
+| Sử dụng kiến trúc MMVM | +0.5 |
 | Sử dụng dependency injection | +0.5 |
 | Quản lý khách hàng | +0.5 |
 | In đơn hàng (PDF) | +0.5 |
 | Hỗ trợ sắp xếp khi xem danh sách theo yêu cầu | +0.5 |
 | Hỗ trợ tìm kiếm nâng cao | +1.0|
-**Tổng điểm nâng cao: 5.0**
 
 ---
 
@@ -102,7 +101,7 @@
 ---
 
 ## 📜 Tác giả
-> **Đồ án môn học: Lập trình Windows – Đại học …**  
+> **Đồ án môn học: Lập trình Windows – Khoa Công nghệ thông tin - Trường Đại học Khoa học Tự nhiên 
 > GVHD: *Thầy Trần Duy Quang*  
 > Năm học: 2025
 
