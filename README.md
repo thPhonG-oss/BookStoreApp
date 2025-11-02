@@ -98,8 +98,8 @@
 
 ## 8. Kế hoạch & Tiến độ thực hiện
 
-| Tuần | Nội dung công việc | Người phụ trách |
-|------|--------------------|----------------|
+| Tuần | Nội dung công việc |
+|------|--------------------|
 | Tuần 1 | Khảo sát đề tài, phân tích yêu cầu, dựng prototyep figma
 | Tuần 2 | Thiết kế UI (Figma), dựng kiến trúc MVVM, Hoàn thiện tầng dữ liệu + Repository
 | Tuần 3 | Kết nối API, binding dữ liệu UI, Thêm chức năng CRUD + Dashboard
