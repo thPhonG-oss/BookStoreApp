@@ -1,60 +1,110 @@
-# 🛍️ WinUI 3 Sales Management App
-
-Ứng dụng **quản lý bán hàng** được xây dựng bằng **WinUI 3 (.NET 8)** theo kiến trúc **Client–Server**.  
-Đây là đồ án môn *Lập trình Windows*, được phát triển trong vòng **8 tuần**.
+# 🪟 ĐỒ ÁN MÔN LẬP TRÌNH WINDOWS
+## Ứng dụng quản lý bán hàng (Sales Management System)
 
 ---
 
-## 🚀 Mục tiêu dự án
+## 0. 👥 Thông tin các thành viên
 
-Xây dựng ứng dụng **bán hàng** dành cho chủ cửa hàng, với các chức năng cơ bản:
-- Đăng nhập / Đăng xuất (Authentication)
-- Quản lý sản phẩm và loại sản phẩm
-- Quản lý đơn hàng
-- Báo cáo thống kê
+| STT | Họ tên | MSSV | Vai trò | Ghi chú |
+|-----|---------|-------|----------|----------|
+| 1 | Lê Huy | 21120466 |  |  |
+| 2 | Đạo Minh Chiến | 22120033 |  |  |
+| 3 | Phan Công Châu | 22120036 |  |  |
+| 4 | Đỗ Ngọc Cường | 22120042 |  |  |
+| 5 | Quách Thành Kiệt | 22120175 |  |  |
+| 6 | Nguyễn Thanh Phong | 22120265 |  |  |
+
+---
+
+## 1. ⚙️ Chức năng ứng dụng
+
+### **Chức năng cơ bản**
+- Đăng nhập / Đăng xuất (JWT + Salt)
 - Dashboard tổng quan
-- In hóa đơn, tìm kiếm, phân trang, v.v.
-
-Ngoài ra, dự án sẽ triển khai thêm một số **chức năng nâng cao** như:
-- Kiến trúc **MVVM**
-- **Dependency Injection**
-- Backup / Restore dữ liệu
-- Quản lý khách hàng và khuyến mãi
-- Chế độ dùng thử 15 ngày
+- Quản lý sản phẩm
+- Quản lý loại sản phẩm
+- Báo cáo / thống kê
+- Cấu hình chương trình: phân trang, lưu lại chức năng chính lần cuối mở.
 
 ---
 
-## 🧩 Kiến trúc
+## 2. 🎨 Giao diện (Prototype Figma)
 
-**Client (WinUI 3 Desktop App)**  
-→ Giao diện người dùng, xử lý logic hiển thị (MVVM pattern).  
-
-**Server (API)**  
-→ Xây dựng bằng ASP.NET Core / NodeJS / Python (tùy chọn), kết nối MySQL hoặc PostgreSQL.
-
-**Cơ sở dữ liệu**  
-→ Lưu trữ thông tin sản phẩm, đơn hàng, khách hàng, doanh thu.
+- File Figma: [ Xem Prototype tại đây](https://www.figma.com/file/xxxxx/SalesApp_UI_V1)
+- Prototype mô phỏng các luồng chính:
+- Đăng nhập → Dashboard → Quản lý sản phẩm → Tạo đơn hàng → In hóa đơn  
+- UI sử dụng Fluent 2 Design System của Microsoft để tương thích với WinUI 3.
 
 ---
 
-## 🏗️ Công nghệ dự kiến sử dụng
+## 3. 🧑‍💻 Làm việc nhóm
 
-| Thành phần | Công nghệ |
-|-------------|------------|
-| Giao diện | WinUI 3, XAML |
-| Logic ứng dụng | C# (.NET 8) |
-| Mẫu kiến trúc | MVVM |
-| Dependency Injection | Microsoft.Extensions.DependencyInjection |
-| API | REST / GraphQL |
-| Database | MySQL hoặc PostgreSQL |
-| ORM (tùy chọn) | Entity Framework Core |
-| Quản lý mã nguồn | Git + GitHub |
+### **Công cụ và quy trình**
+- Quản lý mã nguồn: **GitHub**
+- Giao tiếp nhóm: **Zalo, Notion, Google meet**
+- Thiết kế UI: **Figma**
+- IDE: **Visual Studio 2022**, **PostgreSQL / Supabase**
+
+### **Chiến lược làm việc với Git**
+- Nhánh chính: `main`  
+- Mỗi thành viên tạo branch riêng: `feature/<tên-chức-năng>`  
+- Quy trình merge:  
+  1. Commit → Push lên nhánh cá nhân  
+  2. Pull Request → Review code → Merge vào `develop`  
+  3. Khi ổn định → merge `develop` → `main`
 
 ---
 
-## ⚙️ Setup ban đầu
+## 4. Kiến trúc phần mềm
 
-1. Clone repository:
-   ```bash
-   git clone https://github.com/<your-username>/<repo-name>.git
-   cd <repo-name>
+
+---
+
+## 5. Design Pattern sử dụng
+
+---
+
+## 6. Đảm bảo chất lượng
+
+---
+
+## 7. Tính năng nâng cao
+
+| Tên tính năng | Ghi chú |
+|----------------|---------|
+| Auto Save | +0.25 |
+| Responsive Layout | +0.5 |
+| Bổ sung khuyến mãi | +1.0 |
+| Sử dụng kiến trúc MMVM |  | +0.5 |
+| Sử dụng dependency injection | +0.5 |
+| Quản lý khách hàng | +0.5 |
+| In đơn hàng (PDF) | +0.5 |
+| Hỗ trợ sắp xếp khi xem danh sách theo yêu cầu | +0.5 |
+| Hỗ trợ tìm kiếm nâng cao | +1.0|
+**Tổng điểm nâng cao: 5.0**
+
+---
+
+## 8. Kế hoạch & Tiến độ thực hiện
+
+| Tuần | Nội dung công việc | Người phụ trách |
+|------|--------------------|----------------|
+| Tuần 1 | Khảo sát đề tài, phân tích yêu cầu, dựng prototyep figma
+| Tuần 2 | Thiết kế UI (Figma), dựng kiến trúc MVVM, Hoàn thiện tầng dữ liệu + Repository
+| Tuần 3 | Kết nối API, binding dữ liệu UI, Thêm chức năng CRUD + Dashboard
+| Tuần 4 | Tích hợp nâng cao, backup/restore, khuyến mãi
+| Tuần 5 | Test manual, unit test, hoàn thiện logic
+| Tuần 6 | Hoàn thiện báo cáo, video demo, nộp đồ án
+| Tuần 7 | Dự phòng
+
+---
+
+---
+
+## 📜 Tác giả
+> **Đồ án môn học: Lập trình Windows – Đại học …**  
+> GVHD: *Thầy Trần Duy Quang*  
+> Năm học: 2025
+
+---
+
