@@ -114,7 +114,7 @@
 
 ## Tác giả
 > **Đồ án môn học: Lập trình Windows**
-> *GVHD: *Thầy Trần Duy Quang*  
+> GVHD: *Thầy Trần Duy Quang*  
 > Năm học: 2025
 
 ---
