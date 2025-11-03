@@ -9,9 +9,9 @@
 4. [Làm việc nhóm & Chiến lược Git](#3-làm-việc-nhóm--chiến-lược-git)  
 5. [Kiến trúc phần mềm](#4-kiến-trúc-phần-mềm)  
 6. [Design Pattern áp dụng](#5-design-pattern-áp-dụng)  
-7. [Đảm bảo chất lượng](#6-đảm-bảo-chất-lượng)  
-8. [Các tính năng nâng cao](#7-các-tính-năng-nâng-cao)  
-9. [Kế hoạch & Tiến độ thực hiện](#8-kế-hoạch--tiến-độ-thực-hiện)  
+7. [Đảm bảo chất lượng](#6-đảm-bảo-chất-lượng)
+9. [Các tính năng nâng cao](#7-các-tính-năng-nâng-cao)  
+10. [Kế hoạch & Tiến độ thực hiện](#8-kế-hoạch--tiến-độ-thực-hiện)  
 
 ---
 
