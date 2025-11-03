@@ -130,6 +130,104 @@ Phần backend được tổ chức theo mô hình **3-Layer Architecture**, đ�
 ---
 
 ## 6. Đảm bảo chất lượng
+### 6.1 Coding Convention
+
+#### Quy tắc đặt tên
+- **Tên biến & phương thức**: dùng `PascalCase` cho phương thức, `camelCase` cho biến cục bộ.  
+- **ViewModel**: kết thúc bằng hậu tố `ViewModel` (VD: `OrderViewModel`, `ProductViewModel`).  
+- **Command & Property**: tuân theo chuẩn **MVVM Toolkit** (`[ObservableProperty]`, `[RelayCommand]`).
+
+#### Thư mục tổ chức
+```
+/Views
+/ViewModels
+/Models
+/Services
+/Helpers
+/Tests
+```
+
+#### Nguyên tắc viết code
+- Tuân thủ **SOLID** và **Clean Code**.  
+- Tất cả commit phải đi kèm description rõ ràng.  
+- Hạn chế **code-behind**, logic đặt trong **ViewModel**.  
+- Comment cho logic phức tạp, ưu tiên code dễ đọc.  
+- Sử dụng `.editorconfig` + **StyleCop** để format tự động.  
+- Commit message chuẩn: `feat:`, `fix:`, `refactor:`, `test:`  
+- Không viết logic nghiệp vụ trong **View (XAML.cs)** — toàn bộ xử lý được thực hiện trong **ViewModel** hoặc **Service**.
+
+#### Format & Style
+- Tuân theo **.NET Coding Style (Microsoft C# Guidelines)**.  
+- Dùng **StyleCop Analyzers** hoặc **Roslyn Analyzer** để kiểm tra coding rule.  
+- Cấu hình `.editorconfig` để thống nhất format toàn dự án.
+
+#### Quy trình commit
+Sử dụng **Conventional Commit** cho Git message:
+
+```
+feat: thêm màn hình quản lý đơn hàng
+fix: sửa lỗi binding dữ liệu sản phẩm
+refactor: tách service xử lý doanh thu
+docs: cập nhật hướng dẫn sử dụng
+```
+
+---
+
+### 6.2 Chiến lược kiểm thử (Testing Strategy)
+
+#### 1. Manual Test (Kiểm thử thủ công)
+**Mục tiêu**: Đánh giá trải nghiệm người dùng và kiểm tra luồng nghiệp vụ chính.
+
+**Phương pháp:**
+- Test từng chức năng: Login, CRUD sản phẩm, đơn hàng, báo cáo.  
+- Test theo role: Admin, Staff, User.  
+- Test trên nhiều độ phân giải màn hình Windows.  
+- Ghi log kiểm thử trên **Google Sheet / Azure DevOps / Jira**.
+
+---
+
+#### 2. Unit Test (Kiểm thử đơn vị)
+**Mục tiêu**: Đảm bảo các hàm và component hoạt động đúng độc lập.  
+**Công cụ**: `xUnit` hoặc `NUnit`, `Moq` để mock service/API.
+
+**Phạm vi:**
+- Tính toán hóa đơn, doanh thu.  
+- Validate dữ liệu nhập.  
+- Test ViewModel không phụ thuộc UI.  
+
+**Cấu trúc thư mục test:**
+```
+/Tests
+  /Services
+    OrderServiceTests.cs
+  /ViewModels
+    OrderViewModelTests.cs
+```
+
+**Mục tiêu bao phủ**: ≥ 70% dòng lệnh.
+
+---
+
+#### 3. UI Automation Test (Kiểm thử giao diện tự động)
+**Mục tiêu**: Mô phỏng thao tác người dùng để phát hiện lỗi UI.  
+**Công cụ**: WinAppDriver / Playwright Desktop / Appium Windows.
+
+**Kịch bản test:**
+1. Mở app → đăng nhập → thêm sản phẩm → tạo đơn → kiểm tra tổng tiền.  
+2. Thử nhập sai dữ liệu xem có hiển thị lỗi.  
+3. Test timeout khi API lỗi.
+
+---
+
+### 6.3 Tổng kết
+
+| Hạng mục          | Công cụ / Quy ước                            | Mục tiêu                              |
+|-------------------|----------------------------------------------|----------------------------------------
+| Coding convention | StyleCop, .editorconfig, Conventional Commit | Giữ code thống nhất và dễ bảo trì     |
+| Manual test       | Checklist, cross-resolution test             | Xác minh chức năng và UX              |
+| Unit test         | xUnit / NUnit, Moq                           | Kiểm tra logic nghiệp vụ và ViewModel |
+| UI test tự động   | WinAppDriver / Appium for Windows            | Đảm bảo UI hoạt động đúng             |
+| Code review       | Pull Request & Review                        | Phát hiện lỗi và cải thiện chất lượng |
 
 ---
 
