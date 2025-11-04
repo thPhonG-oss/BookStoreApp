@@ -42,7 +42,7 @@
 
 ## 2. Giao diện (Prototype Figma)
 
-- File Figma: [ Xem Prototype tại đây](https://www.figma.com/file/xxxxx/SalesApp_UI_V1)
+- File Figma: [ Xem Prototype tại đây](https://www.figma.com/design/hGmClwEz3A8rula3h4sst7/Windows-Programming?node-id=0-1&t=KYH1VTSzuTjpkDmF-1)
 - Prototype mô phỏng các luồng chính:
 - Đăng nhập → Dashboard → Quản lý sản phẩm → Tạo đơn hàng → In hóa đơn  
 - UI sử dụng Fluent 2 Design System của Microsoft để tương thích với WinUI 3.
